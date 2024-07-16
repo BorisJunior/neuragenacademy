@@ -1,862 +1,866 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-  <title>Boris Jr Site</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    gtag("config", "G-YMWDE0VTD3");
+  </script>
 
-  <!-- Favicons -->
-  <link href="assets/img/fav.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#000" />
+  <meta name="description"
+    content="Boris Junior Koulevo | Portfolio, Découvrez mes projets et mon parcours. Je valorise une structure de contenu simple, des motifs de design épurés et des interactions réfléchies." />
+  <meta name="keywords"
+    content="boris koulevo,boris junior koulevo portfolio,borisjunior,boris koulevo site,boris koulevo web,boris koulevo github,boriskoulevo site,boris koulevo data scientist,boris data scientist" />
+  <meta name="author" content="Boris Junior Koulevo" />
+  <meta property="og:image" content="https://www.boriskoulevo.site/src/png/Preview-card-min.png" />
+  <meta property="og:title" content="Boris Junior Koulevo | Portfolio" />
+  <meta property="og:description"
+    content="Bonjour ! Je m'appelle Boris Junior Koulevo. Je suis data scientist. Découvrez mes projets et mon parcours. Je valorise une structure de contenu simple, des motifs de design épurés et des interactions réfléchies." />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <meta property="og:url" content="https://boriskoulevo.site" />
+  <meta property="og:site_name" content="Boris Junior Koulevo Portfolio" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <meta name="twitter:image:src" content="https://www.boriskoulevo.site/src/png/Preview-card-min.png" />
+  <meta name="twitter:site" content="@Portfolio" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Boris Junior Koulevo | Portfolio" />
+  <meta name="twitter:description"
+  content="Bonjour ! Je m'appelle Boris Junior Koulevo. Je suis data scientist. Découvrez mes projets et mon parcours. Je valorise une structure de contenu simple, des motifs de design épurés et des interactions réfléchies." />
+  <title>Boris Junior Koulevo | Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="src/png/avatar.png" />
+  <!-- aos cdn -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- google fonts-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+<body class="body">
+  <audio loop="" id="audioPlayer" style="display: none">
+    <source src="src/mp3/preloader.mp3" type="audio/mp3" />
+  </audio>
+  <div id="preloader"></div>
+  <noscript>Autoriser Javascript</noscript>
 
-  <!-- =======================================================
-  * Template Name: Personal
-  * Updated: Mar 10 2023 with Bootstrap v5.2.3
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
+  <header>
+    <div class="cursor-inner" id="cursor-inner"></div>
+    <div class="cursor-outer" id="cursor-outer"></div>
 
-<body>
+    <div class="navbar" id="navbar">
+      <div class="hey">Salut!</div>
+      <div class="logo" tabindex="0" aria-label="logo boris koulevo">
+        <div class="logo-top">
+          <img src="src/png/avatar.png" alt="tête d'animation" id="nav-avatar"/>
+        </div>
+      </div>
+      <div class="navbar-tabs" id="navbar-tabs">
+        <ul class="navbar-tabs-ul">
+          <li class="home activeThistab" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="100">
+            <a href="#home" tabindex="0" aria-label="bouton menu Accueil">
+              &#60;/Accueil&#62;
+            </a>
+          </li>
 
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="container">
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
-      <h2>Je suis <span class="typed" data-typed-items="Développeur, Ingénieur IA Big Data, Enseignant"></span></h2>
+          <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
+            <a href="#about" aria-label="bouton menu À Propos">
+              &#60;/À Propos&#62;
+            </a>
+          </li>
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link active" href="#header">Accueil</a></li>
-          <li><a class="nav-link" href="#about">A propos</a></li>
-          <li><a class="nav-link" href="#resume">Curriculum Vitae</a></li>
-          <li><a class="nav-link" href="#services">Services</a></li>
-          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
+
+          <li class="skills" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
+            <a href="#skills" aria-label="bouton menu Compétences">
+              &#60;/Compétences&#62;
+            </a>
+          </li>
+
+
+           <li class="exp" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
+            <a href="#experiences" aria-label="bouton menu Experiences">
+              &#60;/Expériences&#62;
+            </a>
+          </li>
+
+          <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
+            <a href="#portfolio" aria-label="bouton menu Projets">
+              &#60;/Projets&#62;
+            </a>
+          </li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-      <div class="social-links">
-        <a href="https://github.com/BorisJunior/" target="_blank" class="github"><i class="bi bi-github"></i></a>
-        <a href="https://linkedin.com/in/boris-jr-koulevo-0369411a3" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
-        <a href="https://instagram.com/juniro_overflow"  target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://facebook.com/borisjunior.koulevo" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
-        </div>
-
+      </div>
+      <!-- navbar tabs ends -->
     </div>
-  </header><!-- End Header -->
+  </header>
+  <!-- header ends here -->
 
-  <!-- ======= About Section ======= -->
-  <section id="about" class="about">
-
-    <!-- ======= About Me ======= -->
-    <div class="about-me container">
-
-      <div class="section-title">
-        <h2>A propos</h2>
-        <p>Qui suis-je ?</p>
+  <main>
+    <!-- hamburger -->
+    <div class="hamburger" id="hamburger" data-aos="fade">
+      <div class="hamburgerbase">
+        <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0" aria-label="Bouton Menu">
+          <span class="burger-bar" id="burger-bar1"></span>
+          <span class="burger-bar" id="burger-bar2"></span>
+          <span class="burger-bar" id="burger-bar3"></span>
+        </button>
       </div>
-
-      <div class="row">
-        <div class="col-lg-4" data-aos="fade-right">
-          <img src="assets/img/moi.jpg" class="img-fluid" alt="">
-        </div>
-        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <h3>Ingénieur Intelligence Artificielle Big Data, Programmer & Enseignant</h3>
-          <p class="fst-italic">
-            Bienvenue sur mon site web ! Je suis un ingénieur spécialisé en Intelligence Artificielle et Big Data, un passionné de programmation et un Enseignant dévoué
-          </p>
-          <div class="row">
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Naissance:</strong> <span>2 Mai 2000</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Site Web:</strong> <span><a href="https://borisjunior.github.io/neuragenacademy/" target="_blank" rel="noopener noreferrer">NeuraGenAcademy</a></span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>WhatsApp:</strong> <span>+33 7 45 16 75 71 </span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>VIlle:</strong> <span>Lille, France</span></li>
-              </ul>
-            </div>
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>24</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Niveau:</strong> <span>Master</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>borisjuniro@gmail.com neuragenacademy@gmail.com</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Disponible</span></li>
-              </ul>
-            </div>
-          </div>
-          <p>
-            Mon objectif est de résoudre des problèmes complexes en utilisant les technologies de pointe dans le domaine de l'IA et du Big Data, tout en partageant mes connaissances et en inspirant les autres à explorer ce domaine passionnant
-          </p>
-        </div>
-      </div>
-
-    </div><!-- End About Me -->
-
-    <!-- ======= Counts ======= -->
-    <div class="counts container">
-
-      <div class="row">
-
-        <div class="col-lg-4 col-md-6">
-          <div class="count-box">
-            <i class="bi bi-emoji-smile"></i>
-            <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Clients Satisfaits</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mt-5 mt-md-0">
-          <div class="count-box">
-            <i class="bi bi-journal-richtext"></i>
-            <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Projets</p>
-          </div>
-        </div>
-
-      
-        <div class="col-lg-4 col-md-6 mt-5 mt-lg-0">
-          <div class="count-box">
-            <i class="bi bi-award"></i>
-            <span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Diplômes & Certifications</p>
-          </div>
-        </div>
-
-      </div>
-
-    </div><!-- End Counts -->
-
-    <!-- ======= Skills  ======= -->
-    <div class="skills container">
-
-      <div class="section-title">
-        <h2>Compétences</h2>
-      </div>
-
-      <div class="row skills-content">
-
-        <div class="col-lg-6">
-
-          <div class="progress">
-            <span class="skill">Machine Learning ( Apprentissage supervisé & apprentissage non supervisé)<i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-
-          <div class="progress">
-            <span class="skill">Deep Learning (Réseaux de neurones, CNNs, RNNs, Auto Encodeurs, Transformers etc...)<i class="val">85%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-           <div class="progress">
-            <span class="skill">Python (+ Tensorflow, Keras, OpenCV ...)<i class="val">80%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-          
-          <div class="progress">
-            <span class="skill">SQL & NoSQL (PostgreSQL, MySQL, SQL Server, MongoDb etc...) <i class="val">95%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">Matlab<i class="val">75%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col-lg-6">
-
-         
-          <div class="progress">
-            <span class="skill">R <i class="val">75%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          
-          <div class="progress">
-            <span class="skill">Gestion de projet SCRUM <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          
-          <div class="progress">
-            <span class="skill">Système d'aide à la décision<i class="val">85%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-
-          <div class="progress">
-            <span class="skill">Flutter <i class="val">80%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">HTML/CSS/JS <i class="val">95%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-
-
-        </div>
-
-      </div>
-
-    </div><!-- End Skills -->
-
-    
-
-    <!-- ======= Testimonials ======= -->
-    <div class="testimonials container">
-
-      <div class="section-title">
-        <h2>Testimoniaux</h2>
-      </div>
-
-      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-        <div class="swiper-wrapper">
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                J'ai eu le plaisir de travailler avec Boris sur plusieurs projets de recherche en intelligence artificielle. Sa capacité à aborder les problèmes sous différents angles et à proposer des solutions innovantes m'a toujours impressionnée. C'est un vrai plaisir de collaborer avec quelqu'un d'aussi compétent et passionné
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="assets/img/testimonials/test1.jpg" class="testimonial-img" alt="">
-              <h3>Kevin TIASSOU</h3>
-              <h4>Ingénieur IA Big DATA</h4>
-            </div>
-          </div><!-- End testimonial item -->
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Grâce à Boris, j'ai pu comprendre des concepts complexes en bases de données que je trouvais insurmontables auparavant. Ses méthodes pédagogiques et sa patience en tant qu'enseignant particulier m'ont permis de progresser rapidement. Je le recommande vivement à tous ceux qui cherchent à améliorer leurs compétences en informatique.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="assets/img/testimonials/test2.jpg" class="testimonial-img" alt="">
-              <h3>Lucas Bryan</h3>
-              <h4>Etudiant à UTT</h4>
-            </div>
-          </div><!-- End testimonial item -->
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                J'ai eu la chance de collaborer avec Boris sur plusieurs projets lors de notre Licence. Sa rigueur, son sens de l'organisation et sa connaissance approfondie du génie logiciel en font un allié précieux pour tout projet. Je n'hésiterais pas une seconde à retravailler avec lui.
-                <br>
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="assets/img/testimonials/test3.jpg" class="testimonial-img" alt="">
-              <h3>Gnandi PAKAMEY</h3>
-              <h4>Developpeur Full Stack</h4>
-            </div>
-          </div><!-- End testimonial item -->
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Les cours de codage que m'a donnés Boris ont été une véritable révélation pour moi. Avec sa manière d'enseigner claire et structurée, j'ai pu appréhender des langages de programmation qui me semblaient inaccessibles. C'est un excellent pédagogue !
-                <br><br>
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="assets/img/testimonials/test4.jpg" class="testimonial-img" alt="">
-              <h3>Manelle HASSEN</h3>
-              <h4>Etudiante en IA Big DATA à ESGI Lyon</h4>
-            </div>
-          </div><!-- End testimonial item -->
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                La combinaison de la formation en génie logiciel et de l'expertise en IA de Boris est unique et extrêmement précieuse. Que ce soit pour des discussions techniques ou pour des conseils sur la direction d'un projet, je sais que je peux toujours compter sur lui.
-                <br><br>
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="assets/img/testimonials/test4.jpg" class="testimonial-img" alt="">
-              <h3>Grace DJOBOKOU</h3>
-              <h4>Ingénieure IA Big Data</h4>
-            </div>
-          </div><!-- End testimonial item -->
-
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-
-      <div class="owl-carousel testimonials-carousel">
-
-      </div>
-
-    </div><!-- End Testimonials  -->
-
-  </section><!-- End About Section -->
-
-  <!-- ======= Resume Section ======= -->
-  <section id="resume" class="resume">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Curriculum Vitae</h2>
-        <p>Jetez un coup d'oeil à mon CV</p>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-6">
-          <h3 class="resume-title">Profil & Contact</h3>
-          <div class="resume-item pb-0">
-            <h4>Boris Jr KOULEVO</h4>
-            <p><em>Découvrez mon parcours professionnel dynamique et mes compétences approfondies en tant qu'ingénieur en Intelligence Artificielle et Big Data, programmeur expérimenté et Enseignant passionné. Mon CV reflète ma passion pour l'innovation technologique, mon engagement envers l'excellence et ma volonté constante d'apprendre et de repousser les limites de la science des données.</em></p>
-            <p>
-            <ul>
-              <li>Troyes</li>
-              <li>+33 7 82 98 85 89</li>
-              <li>borisjuniro@gmail.com</li>
-            </ul>
-            </p>
-          </div>
-
-          <h3 class="resume-title">Education</h3>
-          <div class="resume-item">
-            <h4>Master en Intelligence Artificielle & Big Data</h4>
-            <h5>2022 - 2024</h5>
-            <p><em>Ecole Polytechnique de Lomé - Université Technologique de Belfort-Montbeliard - Université Technologique de Troyes</em></p>
-            <p>Actuellement en parcours Master en Intelligence Artificielle et Big Data, me dotant d'une expertise pointue dans ces domaines me permettant de résoudre efficacement les problèmes complexes</p>
-          </div>
-          <div class="resume-item">
-            <h4>Licence en Génie Logiciel et Système d'information</h4>
-            <h5>2018 - 2021</h5>
-            <p><em>Institut Africain de l'Informatique</em></p>
-            <p>J'ai obtenu une Licence en Génie Logiciel et Système d'Information, me dotant d'une expertise pratique dans le développement de logiciels et la gestion des systèmes d'information me permettant d'acquérir les compétences nécessaires pour concevoir et mettre en œuvre des solutions informatiques efficaces.</p>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <h3 class="resume-title">Expériences Professionelles</h3>
-
-          <div class="resume-item">
-            <h4>Data Scientist au pôle R&D d'ALTECA</h4>
-            <h5>Fev 2024 - Aout 2024</h5>
-            <p><em>Lille, FRANCE</em></p>
-            <p>
-            <ul>
-              <li> Génération de réponses émotionnelle </li>
-              
-                  <ul>
-                      <li>
-                        Etat de l'art du projet
-                      </li>
-                      <li>
-                        Collecte et prétraitement des données
-                      </li>
-                    <li>
-                        Conception et implémentation d’un modèle de traitement de langage naturel basé sur les auto-encodeurs conditionnels variationnels avec Pytorch
-                      </li>
-                    <li>
-                      Entrainement, Test, Evaluation et amélioration du modèle
-                      </li>
-                  </ul>
-              
-            </ul>
-            </p>
-          </div>
-
-          
-          <div class="resume-item">
-            <h4>Développeur au Centre National d'Etudes et de Traitements Informatique (CENETI)</h4>
-            <h5>Jan 2022 - Aout 2022</h5>
-            <p><em>Lomé , TOGO</em></p>
-            <p>
-            <ul>
-              <li>Mise en place d'une solution informatique de traitement de salaire</li>
-              
-                  <ul>
-                      <li>
-                        Traitement mensuel des données de salariés
-                      </li>
-                      <li>
-                        Edition des bulletins de paye et bordereaux
-                      </li>
-                  </ul>
-              
-            </ul>
-            </p>
-          </div>
-
-          <div class="resume-item">
-            <h4>Développeur au Consortium Informatique et Développement Organisationel (CIDO)</h4>
-            <h5>Juillet 2021 - Novembre 2021</h5>
-            <p><em>Lomé, TOGO</em></p>
-            <p>
-            <ul>
-              <li>Réalisation d'une solution informatique de gestion des activités municipales</li>
-
-                  <ul>
-                      <li>
-                        Digitalisation des traitement de demandes de pièces administratives
-                      </li>
-                      <li>
-                        Repertoriage des infrastructures de la commune
-                      </li>
-                  </ul>
-            </ul>
-            </p>
-          </div>
-
-   
-        </div>
-      </div>
-
     </div>
-  </section><!-- End Resume Section -->
+    <!-- hamburger -->
+    <div class="mobiletogglemenu" id="mobiletogglemenu">
+      <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
+        <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">
+          <a href="#home" tabindex="0" aria-label="bouton menu Accueil">
+            &#60;/Accueil&#62;
+          </a>
+        </li>
 
-  <!-- ======= Services Section ======= -->
-  <section id="services" class="services">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Services</h2>
-        <p>Mes Services</p>
-      </div>
-
-      
-
-      <div class="section-title">
-        <h1>En tant que Ingénieur IA & Big Data</h1>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
-          <div class="icon-box">
-            <div class="icon"><i class="bi bi-robot"></i></div>
-            <h4><a href="">Développement IA</a></h4>
-            <p> Création de solutions intelligentes basées sur l'Intelligence Artificielle pour résoudre des problèmes complexes et améliorer les processus métier grâce à des algorithmes avancés et à l'apprentissage automatique.</p>
-          </div>
-        </div>
+        <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
+          <a href="#about" tabindex="0" aria-label="bouton menu À Propos">
+            &#60;/À Propos&#62;
+          </a>
+        </li>
 
 
-        <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-          <div class="icon-box">
-            <div class="icon"><i class="bi bi-pie-chart-fill"></i></div>
-            <h4><a href="">Data Scientist</a></h4>
-            <p>Analyse et interprétation approfondies des données pour extraire des insights précieux, créer des modèles prédictifs et aider les organisations à prendre des décisions éclairées basées sur les données.</p>
-          </div>
-        </div>
+        <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills" onclick="hidemenubyli()">
+          <a href="#skills" tabindex="0" aria-label="bouton menu Compétences">
+            &#60;/Compétences&#62;
+          </a>
+        </li>
 
-       
-
-        <br><br><br>
-
-        <div class="section-title">
-          <h1>En tant que Développeur</h1>
-        </div>
-  
-        <div class="row">
-  
-          <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-filetype-html"></i></div>
-              <h4><a href="">Développement et Conception applications Web</a></h4>
-              <p>Création de sites web interactifs, fonctionnels et esthétiques pour répondre aux besoins spécifiques des clients.</p>
-            </div>
-          </div>
-  
-          <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-phone"></i></div>
-              <h4><a href="">Développement et Conception applications Mobile</a></h4>
-              <p>Conception et développement d'applications mobiles pour différentes plateformes (iOS, Android) offrant des expériences utilisateur optimales.</p>
-            </div>
-          </div>
-  
-        </div>
-  
-        <br><br><br>
-
-        <div class="section-title">
-          <h1>En tant que Enseignant</h1>
-        </div>
-  
-        <div class="row">
-
-        <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="icon-box">
-            <div class="icon"><i class="bi bi-code-square"></i></div>
-            <h4><a href=""></a>Formation en Algorithmique & Programmation & Conception</h4>
-            <p>Dispense de cours et de formations pour développer les compétences en algorithmique et programmation, sur des langages tels Python, HTML/CSS/JS, PHP, SQL etc... et en conception de bases de données et analyse (Merise, UML etc..)</p>
-          </div>
-        </div>
+          <li class="exp-mobile-tab" class="mobile-navbar-tabs-li" onclick="hidemenubyli()">
+            <a href="#experiences" tabindex="0" aria-label="bouton menu Expériences">
+              &#60;/Expériences&#62;
+            </a>
+          </li>
 
 
-        <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="icon-box">
-            <div class="icon"><i class="bi bi-mortarboard"></i></div>
-            <h4><a href=""></a>Soutien Scolaire </h4>
-            <p>Offre d'un accompagnement personnalisé et des ressources pédagogiques pour aider les étudiants à améliorer leurs performances académiques et à surmonter les difficultés rencontrées dans diverses matières scolaires (Mathématiques, Anglais etc... )</p>
-          </div>
-        </div>
-
-      </div>
-
+        <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
+          <a href="#portfolio" tabindex="0" aria-label="bouton menu Projets">
+            &#60;/Projets&#62;
+          </a>
+        </li>
+      </ul>
     </div>
-  </section><!-- End Services Section -->
+    <!-- mobile toggle menu ends -->
 
-  <!-- ======= Portfolio Section ======= -->
-  <section id="portfolio" class="portfolio">
-    <div class="container">
+    <section class="landing-page-container" id="home">
+      <div class="blob"></div>
 
-      <div class="section-title">
-        <h2>Portfolio</h2>
-        <p>Mes projets</p>
+      <div class="text-content">
+        <article id="hello-friend" data-aos="fade-up" data-aos-delay="0">
+          <p class="jello">B</p>
+          <p class="jello">o</p>
+          <p class="jello">n</p>
+          <p class="jello">j</p>
+          <p class="jello">o</p>
+          <p class="jello">u</p>
+          <p class="jello">r</p>
+          &nbsp;
+          <p class="jello">;)</p>
+          &nbsp;
+          <p class="jello">J</p>
+          <p class="jello">e</p>
+          &nbsp;
+          <p class="jello">s</p>
+          <p class="jello">u</p>
+          <p class="jello">i</p>
+          <p class="jello">s</p>
+        </article>
+        <article id="name" data-aos="fade-up" data-aos-delay="200">
+          <p class="jello">B</p>
+          <p class="jello">o</p>
+          <p class="jello">r</p>
+          <p class="jello">i</p>
+          <p class="jello">s</p>
+          &nbsp;
+          <p class="jello">J</p>
+          <p class="jello">u</p>
+          <p class="jello">n</p>
+          <p class="jello">i</p>
+          <p class="jello">o</p>
+          <p class="jello">r</p>
+          &nbsp;
+          <p class="jello">K</p>
+          <p class="jello">o</p>
+          <p class="jello">u</p>
+          <p class="jello">l</p>
+          <p class="jello">e</p>
+          <p class="jello">v</p>
+          <p class="jello">o</p>
+          <p class="jello">.</p>
+        </article>
+
+        <article id="work" data-aos="fade-up" data-aos-delay="400">
+          <div>
+            <p class="jello">J</p>
+          </div>
+          <div>
+            <p class="jello">'a</p>
+            <p class="jello">d</p>
+            <p class="jello">o</p>
+            <p class="jello">r</p>
+            <p class="jello">e</p>
+          </div>
+           <div>
+            <p class="jello">l</p>
+            <p class="jello">e</p>
+          </div>
+           <div>
+            <p class="jello">m</p>
+            <p class="jello">o</p>
+            <p class="jello">n</p>
+            <p class="jello">d</p>
+            <p class="jello">e</p>
+          </div>
+          <div>
+            <p class="jello">d</p>
+            <p class="jello">e</p>
+          </div>
+          <div>
+            <p class="jello">l</p>
+            <p class="jello">a</p>
+          </div>
+          <div>
+            <p class="jello">d</p>
+            <p class="jello">a</p>
+            <p class="jello">t</p>
+            <p class="jello">a</p>
+          </div>
+          <div>
+            <p class="jello">e</p>
+            <p class="jello">t</p>
+          </div>
+          <div>
+            <p class="jello">d</p>
+            <p class="jello">e</p>
+          </div>
+
+          <div>
+            <p class="jello">l'</p>
+            <p class="jello">I</p>
+            <p class="jello">A</p>
+            <p class="jello">.</p>
+          </div>
+        </article>
+        <p id="info-para" data-aos="fade-up" data-aos-delay="600">
+          Passionné par la science des données, je possède une expertise avancée en intelligence artificielle, machine learning, et deep learning.<br />
+          <br />
+          Fort de compétences en ML, BI, ETL, et visualisation de données, j'excelle dans la conception de solutions innovantes et la gestion de projets complexes.
+        </p>
+        <div class="contact-btn-div" data-aos="fade-up" data-aos-delay="800">
+          <a href="mailto:borisjuniro@gmail.com" tabindex="-1">
+            <button class="letsTalkBtn">
+              <p class="letsTalkBtn-text">Discutons !</p>
+              <span class="letsTalkBtn-BG"></span>
+            </button></a>
+          <div class="setting-container" id="setting-container">
+            <input type="checkbox" id="switchforsetting" onclick="settingtoggle()" />
+
+            <label for="switchforsetting" class="needtobeinvert" id="labelforsetting" tabindex="0"
+              aria-label="paramètres pour le son et l'apparence"></label>
+
+            <div class="visualmodetogglebuttoncontainer" id="visualmodetogglebuttoncontainer">
+              <input type="checkbox" id="switchforvisualmode" onclick="visualmode()" />
+              <label for="switchforvisualmode" id="labelforvisualmode" tabindex="0"
+                aria-label="changer l'apparence"></label>
+            </div>
+
+            <div class="soundtogglebuttoncontainer" id="soundtogglebuttoncontainer">
+              <input type="checkbox" id="switchforsound" onclick="playpause()" />
+              <label for="switchforsound" id="labelforsound" tabindex="0" aria-label="activer le son"
+                class="needtobeinvert"></label>
+            </div>
+          </div>
+          <!-- setting div ends -->
+        </div>
+        <!-- contact-btn-div -->
       </div>
 
-      <!-- <div class="row">
-        <div class="col-lg-12 d-flex justify-content-center">
-          <ul id="portfolio-flters">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-card">Card</li>
-            <li data-filter=".filter-web">Web</li>
+    </section>
+    <!-- landing page ends here -->
+    <section class="about-section-container" id="about" data-aos="fade-up">
+      <div class="about-section">
+        <div class="section-heading">
+          <h2 class="section-heading-article" tabindex="0" aria-label="Titre À Propos de Moi">
+            &#60;/À Propos&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="info-dp-section">
+          <div class="about-info">
+            <p tabindex="0">
+            Bonjour ! Bienvenue sur mon site. Titulaire d'un Master en Intelligence Artificielle et Big Data et d'une Licence en Génie Logiciel et Systèmes d'Information, je suis Consultant Data & IA. Passionné par l'IA et les données, j'ai développé une expertise en machine learning, deep learning, Business Intelligence, ETL, et visualisation de données
+            </p>
+            <br />
+            <p tabindex="0">
+            Je suis motivé par l'exploration des possibilités technologiques et la création de solutions innovantes. J'aime travailler en équipe et collaborer sur des projets ambitieux ayant un impact significatif.
+            </p>
+            <br />
+            <p tabindex="0">
+            Mes aspirations incluent le développement de modèles d'IA avancés, l'optimisation des processus décisionnels via la BI, et la participation à des projets de transformation digitale, tout en continuant à apprendre et à m'améliorer dans ce domaine en constante évolution."
+            </p>
+             <!-- Resume button -->
+      <button class="resume-btn" id="resume-btn" onclick="openURL()">
+        <div class="sign">
+          <svg viewBox="0 0 640 512">
+            <path
+              d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z" />
+          </svg>
+        </div>
+
+        <div class="text">CV</div>
+      </button>
+          </div>
+
+          <div class="dp" data-aos="fade-up">
+            <img src="src/png/profile-pic.png" alt="Boris Junior Koulevo" tabindex="0" aria-label="image de boris" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about section ends  -->
+
+    <section class="skills-section-container" id="skills">
+      <div class="skills-section">
+        <div class="section-heading" data-aos="fade-up">
+          <h2 class="section-heading-article" tabindex="0" aria-label="skills heading">
+            &#60;/Compétences&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="frontend-dev-section">
+          <h3 class="frontend-dev-heading" data-aos="fade-up" tabindex="0"
+            aria-label="Voici mes compétences en tant que Consultant IA Big Data">
+            Tech Stack
+          </h3>
+          <ul class="tech-stack-wrapper">
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/pythonlogo.png" alt="Html skill" class="tech-stack-logo" />
+              <span class="tooltip">PYTHON</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/scikit-learnlogo.png" alt="css skill" class="tech-stack-logo" />
+              <span class="tooltip">SCIKIT-LEARN</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/pytorchlogo.png" alt="js skill" class="tech-stack-logo" />
+              <span class="tooltip">PYTORCH</span>
+            </li>
+
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/clogo.png" alt="c language skill" class="tech-stack-logo" />
+              <span class="tooltip">C</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/cpplogo.png" alt="c++ language skill" class="tech-stack-logo" />
+              <span class="tooltip">C++</span>
+            </li>
+
+               <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/gcplogo.png" alt="c++ language skill" class="tech-stack-logo" />
+              <span class="tooltip">GCP</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/awslogo.png" alt="photoshop skill" class="tech-stack-logo" />
+              <span class="tooltip">AWS</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/powerbilogo.png" alt="adobe illustrator skill" class="tech-stack-logo" />
+              <span class="tooltip">POWER BI</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/githublogo.png" alt="github skill" class="tech-stack-logo needtobeinvert" />
+              <span class="tooltip">GITHUB</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/gitlogo.png" alt="git skill" class="tech-stack-logo" />
+              <span class="tooltip">GIT</span>
+            </li>
+
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/sparklogo.png" alt="Html skill" class="tech-stack-logo" />
+              <span class="tooltip">SPARK</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/hadooplogo.png" alt="css skill" class="tech-stack-logo" />
+              <span class="tooltip">HADOOP</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/dockerlogo.png" alt="js skill" class="tech-stack-logo" />
+              <span class="tooltip">DOCKER</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/elasticlogo.png" alt="bootstrap skill" class="tech-stack-logo" />
+              <span class="tooltip">ELASTIC SEARCH</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/hugginglogo.png" alt="react skill" class="tech-stack-logo" />
+              <span class="tooltip">HUGGING FACE</span>
+            </li>
+
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/sqllogo.png" alt="git skill" class="tech-stack-logo" />
+              <span class="tooltip">SQL</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/noSQLlogo.png" alt="c language skill" class="tech-stack-logo" />
+              <span class="tooltip">NoSQL</span>
+            </li>
+
+
+
+             <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/statslogo.png" alt="github skill" class="tech-stack-logo needtobeinvert" />
+              <span class="tooltip">STATISTIQUES & PROBABILITES</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/MLlogo.png" alt="bootstrap skill" class="tech-stack-logo" />
+              <span class="tooltip">MACHINE LEARNING</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/DLlogo.png" alt="react skill" class="tech-stack-logo" />
+              <span class="tooltip">DEEP LEARNING</span>
+            </li>
+
+             <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/cicdlogo.png" alt="git skill" class="tech-stack-logo" />
+              <span class="tooltip">CI/CD</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/peftlogo.png" alt="js skill" class="tech-stack-logo" />
+              <span class="tooltip">FINE TUNING de LLMs</span>
+            </li>
+
+
+
+
           </ul>
         </div>
-      </div> -->
-
-      <div class="row portfolio-container">
-
-       
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/mort.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Analyse de la mortalité dans le monde</h4>
-              <p>Mortalité mondiale</p>
-              <div class="portfolio-links">
-                <a href="assets/img/mort.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=" Ce projet analyse les diverses causes de mortalité à travers le monde. Utilisant un ensemble de données exhaustif, nous avons produit des visualisations interactives mettant en lumière les principales causes de décès pour des pays tels que la France et les États-Unis. Par la suite, nous avons appliqué une combinaison d'algorithmes de machine learning - notamment la régression linéaire et polynomiale ainsi que le Random Forest - pour prédire le taux de mortalité futur de ces causes. Ces prédictions nous ont non seulement permis d'anticiper les évolutions potentielles, mais aussi d'offrir des recommandations basées sur des données pour les interventions de santé publique"><i class="bx bx-plus"></i></a>
-                <a href="https://raw.githack.com/BorisJunior/mini-projects/main/Death%20Causes/analysis_notebook.html" target="_blank"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/ecom.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Analyse des données E-Commerce</h4>
-              <p>E-Commerce</p>
-              <div class="portfolio-links">
-                <a href="assets/img/ecom.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Ce projet été une analyse approfondie des données transactionnelles des clients. Nous avons d'abord élaboré des visualisations dynamiques, mettant en lumière les tendances d'achat sur des bases mensuelles et journalières. Ces graphiques ont révélé des périodes clés de forte activité, ainsi que des schémas récurrents dans le comportement d'achat. Dans la phase suivante, nous avons utilisé l'algorithme K-means pour segmenter notre clientèle en différentes catégories basées sur leurs habitudes d'achat. Cette segmentation a permis d'identifier des groupes spécifiques, chacun avec des comportements et des besoins distincts. Forts de ces insights, nous avons élaboré des stratégies ciblées pour chaque catégorie, optimisant ainsi l'engagement client et maximisant les bénéfices"><i class="bx bx-plus"></i></a>
-                <a href="https://raw.githack.com/BorisJunior/mini-projects/main/E-commerce/E-commerce%20Analysis.html" target="_blank"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/titanic.webp" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Analyse des données du titanic</h4>
-              <p>Titanic</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/titanic.webp" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Mon projet d'analyse des donées du titanic s'appuie sur les bibliothèque de Python pour visualiser les données, faire ressortir les différentes corrélations entre les passagers et les chances de survie...etc"><i class="bx bx-plus"></i></a>
-                <a href="https://raw.githack.com/BorisJunior/mini-projects/main/Titanic%202.0/Titanic%20(2).html" target="_blank"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/recom.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Système de recommandations de séries</h4>
-              <p>Système de recommandation</p>
-              <div class="portfolio-links">
-                <a href="assets/img/recom.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="En exploitant une base de données riche en évaluations de series, nous avons pu identifier des tendances et des préférences clés parmi les utilisateurs. Notre objectif principal était de construire un système de recommandation efficace et intuitif. En utilisant des techniques avancées de filtrage collaboratif et de factorisation matricielle, nous avons développé un modèle capable de suggérer des séries pertinentes et adaptées aux goûts individuels des utilisateurs. Le résultat final est un système qui améliore significativement l'expérience utilisateur, en proposant des recommandations sur mesure et en augmentant ainsi l'engagement des spectateurs."><i class="bx bx-plus"></i></a>
-                <a href="https://raw.githack.com/BorisJunior/mini-projects/main/Syst%C3%A8me%20de%20recommendation/Recommendation%20System.html" target="_blank"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/taxi.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Résolution d'un problème de conducteur de Taxi</h4>
-              <p>Taxi</p>
-              <div class="portfolio-links">
-                <a href="assets/img/taxi.jpg data-gallery="portfolioGallery" class="portfolio-lightbox" title="J'ai orchestré un projet innovant utilisant l'algorithme de Hill Climbing pour aborder un défi classique d'optimisation : le problème du conducteur de taxi. Dans ce contexte, le challenge était de permettre à un taxi de naviguer à travers un ensemble de villes, en partant d'une ville d'origine pour atteindre une destination finale, tout en minimisant la distance totale parcourue. L'algorithme de Hill Climbing, grâce à sa capacité d'exploration et d'ajustement, a été adapté pour rechercher efficacement les itinéraires les plus optimaux. Le résultat a été un système robuste et agile, capable de fournir des solutions rapides et efficaces pour minimiser les trajets, tout en garantissant la couverture de toutes les villes nécessaires"><i class="bx bx-plus"></i></a>
-                <a href="https://raw.githack.com/BorisJunior/mini-projects/main/Taxi/Taxi.html" target="_blank"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/webs.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Projet de Web Scrapping </h4>
-              <p>Web Scrapping</p>
-              <div class="portfolio-links">
-                <a href="assets/img/webs.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Dans le cadre d'une initiative visant à capitaliser sur les données du commerce en ligne, j'ai développé un outil de Web Scraping dédié à l'extraction d'informations depuis Google Shopping. En fournissant simplement un nom de produit à la fonction, l'outil se charge de parcourir Google Shopping pour collecter des données pertinentes sur l'article : différents prix proposés, sources vendeurs, détails du produit, etc. Ces données sont ensuite structurées et enregistrées dans un fichier Excel, prêtes pour une analyse ultérieure. Cet outil s'est avéré être un atout majeur pour la surveillance des tendances du marché et l'analyse comparative des prix, offrant une vue d'ensemble rapide et détaillée des offres disponibles en ligne."><i class="bx bx-plus"></i></a>
-                <a href="https://raw.githack.com/BorisJunior/mini-projects/main/WebScrapping/ScrapGShop.html" target="_blank"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/sudoku2.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Sudoku</h4>
-              <p>Sudoku</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/sudoku.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Mon projet de Résolution Automatique de Sudoku basé sur l'IA utilise des algorithmes avancés d'apprentissage automatique pour résoudre automatiquement des grilles de Sudoku, offrant ainsi une solution rapide, précise et efficace pour les passionnés de Sudoku et les amateurs de jeux de logique."><i class="bx bx-plus"></i></a>
-                <a href="https://raw.githack.com/BorisJunior/mini-projects/main/Sudoku/Sudoku.html" target="_blank"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/obamatrump.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Analyse des discours Obama & Trump</h4>
-              <p>Text Mining</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/obamatru.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Mon projet de text mining analyse les discours des présidents Obama et Trump afin de ressortir les mots les plus employés par ces derniers et en déduire la personnalité de chacun à travers son discours"><i class="bx bx-plus"></i></a>
-                <a href="https://raw.githack.com/BorisJunior/mini-projects/main/Text-mining%20Obama%20&%20Trump/TextMining.html" target="_blank"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/messi.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Visuels des statistiques de Messi en Club</h4>
-              <p>Stats Messi</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/messi.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Mon projet est un projet power bi portant sur les statistiques de Lionel Messi en club (Stats avant la coupe du monde 2022). Les visuels portent sur la répartitons des buts selon le club, les saisons les compétions ainsi que les victimes favorites etc..."><i class="bx bx-plus"></i></a>
-                <a href="https://github.com/BorisJunior/mini-projects/tree/main/Messi%20Stats" target="_blank"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/mask2.png" class="img-fluid" alt="" style="object-fit: cover;">
-            <div class="portfolio-info">
-              <h4>Intelligence Artificielle de Détection de Masque</h4>
-              <p>MaskAI</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/mask2.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Mon projet de Détection Masque met en œuvre des techniques d'apprentissage automatique et de vision par ordinateur pour développer un système précis et fiable capable de détecter automatiquement le port du masque facial, contribuant ainsi à la sécurité et à la prévention des risques sanitaires."><i class="bx bx-plus"></i></a>
-                <a href="https://github.com/BorisJunior/Mask-detection" target="_blank"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/AInterview2.png" class="img-fluid" alt="" style="object-fit: cover;">
-            <div class="portfolio-info">
-              <h4>Intelligence Artificielle de Simulation d'Interview</h4>
-              <p>AInteview</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/AInterview.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Mon projet de Détection Masque met en œuvre des techniques d'apprentissage automatique et de vision par ordinateur pour développer un système précis et fiable capable de détecter automatiquement le port du masque facial, contribuant ainsi à la sécurité et à la prévention des risques sanitaires."><i class="bx bx-plus"></i></a>
-                <a href="https://github.com/BorisJunior/AInterview" target="_blank"><i class="bx bx-link"></i></a>
-             </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/paye.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Application de gestion de paye</h4>
-              <p>GAP</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/paye.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Mon projet de Gestion de Paie offre une solution complète pour traiter efficacement les données des salariés, générer les bordereaux de paie et les bulletins de salaire mensuels de manière automatisée, simplifiant ainsi le processus de gestion de la paie tout en assurant l'exactitude et la confidentialité des informations."><i class="bx bx-plus"></i></a>
-                <a href="https://github.com/BorisJunior/Mairie" target="_blank"><i class="bx bx-link"></i></a>
-             </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/municipal2.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Application de gestion des activités municipales</h4>
-              <p>GAP</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/municipal.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Mon projet de Gestion des Activités Municipales est une plateforme complète qui facilite la gestion des pièces administratives, la publication d'annonces et le répertoire des centres hospitaliers, écoles et sites touristiques, offrant ainsi aux autorités municipales un outil efficace pour centraliser et optimiser la gestion des activités essentielles à la communauté."><i class="bx bx-plus"></i></a>
-                <a href="https://github.com/BorisJunior/GAP" target="_blank"><i class="bx bx-link"></i></a>
-             </div>
-            </div>
-          </div>
-        </div>
-
-        
-        
-
-       
-
-
       </div>
+    </section>
+    <!-- skills section ends -->
 
+
+    <section class="projects-section-container" id="experiences">
+      <div class="projects-section-div">
+        <div class="section-heading" data-aos="fade-up">
+          <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here">
+            &#60;/Expériences Professionnelles&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+        <div class="project-boxes-div">
+          <div data-aos="fade-up" class="project-box-wrapper">
+            <div class="project-box project-box2" id="project-box2">
+              <div class="info-div">
+                <article class="ProjectHeading">Data Scientist R&D</article>
+                <h1 style="color: white">ALTECA, Lille de Février à Août 2024</h1>
+                <p class="ProjectDescription">
+                  J'ai eu l'opportunité pour mon stage de fin d'Etudes Master de passer 6 mois au pôle R&D d'ALTECA. Durant ce temps j'ai fait l'état de l'art de mon projet,
+                  implémenté une solution en Pytorch basé sur l'architecture Auto Encodeur puis déployé et fait le monitoring de la solution
+                </p>
+              </div>
+
+              <div class="image-div">
+                <img src="src/png/rd.jpg" alt="Data Scientist R&D" />
+              </div>
+            </div>
+          </div>
+
+          <div class="project-box-wrapper" data-aos="fade-up">
+            <div class="project-box project-box5" id="project-box5">
+              <div class="info-div">
+                <article class="ProjectHeading">Développeur FullStack</article>
+                <h1 style="color: white">CENETI, de Janvier à Septembre 2022</h1>
+                <p class="ProjectDescription">
+                  Juste après ma Licence en génie Logiciel j'ai été contacté par le CENETI pour faire une refonte de leur application de gestion de paye (traitement mensuel des salaires et impressions des différents borderaux et bulletins de paye) tout en y incorporant de nouvelles fonctionnalités.
+                  Projet développé avec Laravel en solo
+                </p>
+                <div class="project-buttons">
+                  <a href="https://github.com/BorisJunior/GAP" target="_blank" class="github-redirect"
+                    aria-label="">
+                    <img src="src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                  <a href=https://github.com/BorisJunior/GAP" target="_blank" class="cta"
+                    aria-label="">
+                    <span>Voir Repository</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/png/ceneti.png" alt="Data Scientist R&D" />
+              </div>
+            </div>
+          </div>
+
+          <!-- ---------------------- -->
+          <div class="project-box-wrapper" data-aos="fade-up">
+            <div class="project-box project-box2" id="project-box2">
+              <div class="info-div">
+               <article class="ProjectHeading">Développeur FullStack</article>
+                <h1 style="color: white">CIDO, de Juin-Aout 2021</h1>
+                <p class="ProjectDescription">
+                  Dans le cadre de mon stage de fin d'études Licence j'ai développé en solo pour le compte d'une Mairie, une application de gestions des activités municipales présentant de divers fonctionnalités
+                  dont la digitalisation des traitements de documents administratifs, l'implémentation d'un blog ou encore la création d'un site vitrine pour la mairie
+                </p>
+                <div class="project-buttons">
+                  <a href="https://github.com/BorisJunior/Mairie" target="_blank" class="github-redirect"
+                    aria-label="">
+                    <img src="src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                  <a href="https://github.com/BorisJunior/Mairie" target="_blank" class="cta"
+                    aria-label="">
+                    <span>Voir Repository</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/png/mairie.png" alt="Developpeur FullStack" />
+              </div>
+            </div>
+          </div>
+          <!-- ---------------------- -->
+
+        </div>
+      </div>
+    </section>
+
+    <!-- experiences section ends -->
+
+    <section class="projects-section-container" id="portfolio">
+      <div class="projects-section-div">
+        <div class="section-heading" data-aos="fade-up">
+          <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here">
+            &#60;/Projets&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+        <div class="project-boxes-div">
+          <div data-aos="fade-up" class="project-box-wrapper">
+            <div class="project-box project-box2" id="project-box2">
+              <div class="info-div">
+                <article class="ProjectHeading">AInterview</article>
+                <p class="ProjectDescription">
+                  Simulateur d'entretien basé sur l'IA. Développé en Flask, cette solution vise à préparer ceux qui passent bientôt un entretien à se préparer grâce à l'IA.
+                </p>
+                <div class="project-buttons">
+                  <a href="https://github.com/BorisJunior/AInterview" target="_blank" class="github-redirect"
+                    aria-label="">
+                    <img src="src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                  <a href="https://github.com/BorisJunior/AInterview" target="_blank" class="cta"
+                    aria-label="">
+                    <span>Voir Repository</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/png/ainterview.png" alt="Ainterview" />
+              </div>
+            </div>
+          </div>
+
+          <div class="project-box-wrapper" data-aos="fade-up">
+            <div class="project-box project-box5" id="project-box5">
+              <div class="info-div">
+                <article class="ProjectHeading">EmpatheticAI</article>
+                <p class="ProjectDescription">
+                  Modèle d'IA empathique. Après fine tuning du modèle Mistral AI sur des données empathiques, nait EmpatheticAi, une IA capable de tenir des conversations en prenant en compte l'émotion de l'utilisateur
+                </p>
+                <div class="project-buttons">
+                  <a href="https://github.com/BorisJunior" target="_blank" class="github-redirect"
+                    aria-label="">
+                    <img src="src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                  <a href="https://github.com/BorisJunior/" target="_blank" class="cta"
+                    aria-label="">
+                    <span>Live view</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/png/rd_atlteca.png" alt="EmpatheticAI" />
+              </div>
+            </div>
+          </div>
+
+          <!-- ---------------------- -->
+          <div class="project-box-wrapper" data-aos="fade-up">
+            <div class="project-box project-box2" id="project-box2">
+              <div class="info-div">
+                <article class="ProjectHeading">E-Commerce Analaysis</article>
+                <p class="ProjectDescription">
+                 Ce projet est une analyse de données de E-commerce via des techniques de machine learning afin d'identifier les tendances et piloter des campagnes marketing personnalisées.
+                </p>
+                <div class="project-buttons">
+                  <a href="https://github.com/BorisJunior/mini-projects/blob/main/E-commerce/E-commerce%20Analysis.ipynb" target="_blank" class="github-redirect"
+                    aria-label="">
+                    <img src="src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                  <a href="https://github.com/BorisJunior/mini-projects/blob/main/E-commerce/" target="_blank" class="cta"
+                    aria-label="">
+                    <span>Live view</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/png/ecom.png" alt="E-com" />
+              </div>
+            </div>
+          </div>
+          <!-- ---------------------- -->
+          <div class="project-box-wrapper" data-aos="fade-up">
+            <div class="project-box project-box4" id="project-box4">
+              <div class="info-div">
+                <article class="ProjectHeading">Recommandation System</article>
+                <p class="ProjectDescription">
+                  En utilisant un filtrage collaboratif, ce système de recommandation se base sur des données de notations d'autres utilisateurs pour recommander les meilleurs films ou séries selon nos propres notations
+                </p>
+                <div class="project-buttons">
+                  <a href="https://github.com/BorisJunior/mini-projects/blob/main/Syst%C3%A8me%20de%20recommendation/Recommendation%20System.ipynb" target="_blank" class="github-redirect"
+                    aria-label="">
+                    <img src="src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                  <a href="https://github.com/BorisJunior/mini-projects/blob/main/Syst%C3%A8me%20de%20recommendation/" target="_blank" class="cta"
+                    aria-label="">
+                    <span>Live view</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/png/recom.png" alt="Recommandation System" />
+              </div>
+            </div>
+          </div>
+
+          <!-- ---------------------- -->
+          <div class="project-box-wrapper" data-aos="fade-up">
+            <div class="project-box project-box3" id="project-box3">
+              <div class="info-div">
+                <article class="ProjectHeading">Sign Language Translator</article>
+                <p class="ProjectDescription">
+                  En tirant le meilleur parti des réseaux LSTM, cette solution est capable de traduire en temps réel le langage des signes en langage naturel
+                </p>
+                <div class="project-buttons">
+                  <a href="https://github.com/BorisJunior" target="_blank" class="github-redirect"
+                    aria-label="">
+                    <img src="src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                  <a href="https://github.com/BorisJunior" target="_blank" class="cta"
+                    aria-label="">
+                    <span>Live view</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/png/sign.png" alt="Sign Translator" />
+              </div>
+            </div>
+          </div>
+
+          <!-- ---------------------- -->
+
+          <div class="project-box-wrapper" data-aos="fade-up">
+            <div class="project-box project-box1" id="project-box1">
+              <div class="info-div">
+                <article class="ProjectHeading">Mistral-RAG</article>
+                <p class="ProjectDescription">
+                  En se servant de Mistral comme modèle de base, nous avons implémenté une solution de Retrieval Augmented Generation qui permet à l'IA de répondre à des questions en se basant sur une base de données dynamique
+                </p>
+                <div class="project-buttons">
+                  <a href="https://github.com/vinodjangid07/AXOCEAN" target="_blank" class="github-redirect"
+                    aria-label="Visit axocean on GitHub">
+                    <img src="src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                  <a href="https://www.vinodjangid.site/AXOCEAN/" target="_blank" class="cta"
+                    aria-label="Visit axocean live">
+                    <span>Live view</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/png/rag.png" alt="RAG" />
+              </div>
+            </div>
+          </div>
+          <!-- ---------------------- -->
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+  <!-- main ends here -->
+
+  <footer id="footer">
+    <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()">
+      <article aria-label="Back to top">&#8592;BACK TO TOP</article>
+    </button>
+    <div class="footer-background">
+      <div class="footer-blob"></div>
     </div>
-  </section><!-- End Portfolio Section -->
+    <div class="footer-foreground">
+      <div class="footercontainer">
+        <div class="two-words">
+          <article tabindex="0" aria-label="Learning, Living, and Leveling Up, my quote">
+            "Learning, Living, and Leveling Up."
+          </article>
+        </div>
+        <div class="social-media-container">
+          <div class="getintouch-heading">
+            <article>GetinTouch();</article>
+          </div>
+          <div class="logos">
 
-  <!-- ======= Contact Section ======= -->
-  <section id="contact" class="contact">
-    <div class="container">
+            <a href="https://www.linkedin.com/in/boris-junior-koulevo-0369411a3/" target="_blank"
+              aria-label="My Linkdin"><svg class="SocialHandle" viewBox="0 0 448 512">
+                <path
+                  d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+              </svg></a>
 
-      <div class="section-title">
-        <h2>Contact</h2>
-        <p>Contactez moi</p>
-      </div>
+            <a href="https://github.com/BorisJunior" target="_blank" aria-label="My github"><svg viewBox="0 0 496 512"
+                class="SocialHandle">
+                <path
+                  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+              </svg></a>
 
-      <div class="row mt-2">
-
-        <div class="col-md-6 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-map"></i>
-            <h3>Mon Adresse</h3>
-            <p>Troyes</p>
+            <a href="mailto:borisjuniro@gmail.com" target="_blank" aria-label="My G mail"><svg id="GmailLogo"
+                viewBox="0 0 512 512">
+                <path
+                  d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
+              </svg></a>
           </div>
         </div>
-
-        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-share-alt"></i>
-            <h3>Réseaux Sociaux</h3>
-            <div class="social-links">
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
+        <div class="footer-avatar-container">
+          <img src="src/png/avatar.png" alt="animation-head" class="footer-avatar-img" id="footer-wala-avatar"/>
         </div>
 
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-envelope"></i>
-            <h3>Mail</h3>
-            <p>borisjuniro@gmail.com / neuragenacademy@gmail.com</p>
-          </div>
-        </div>
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-phone-call"></i>
-            <h3>WhatsApp</h3>
-            <p>+33 7 45 16 75 71</p>
-          </div>
+
+        <div class="footer-bottom">
+          <article>
+            Boris Junior
+            &#169; 2024
+          </article>
         </div>
       </div>
-
-      <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
-        <div class="row">
-          <div class="col-md-6 form-group">
-            <input type="text" name="name" class="form-control" id="name" placeholder="Votre nom" required>
-          </div>
-          <div class="col-md-6 form-group mt-3 mt-md-0">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Votre mail" required>
-          </div>
-        </div>
-        <div class="form-group mt-3">
-          <input type="text" class="form-control" name="subject" id="subject" placeholder="Objet" required>
-        </div>
-        <div class="form-group mt-3">
-          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-        </div>
-        <div class="my-3">
-          <div class="loading">Chargement...</div>
-          <div class="error-message"></div>
-          <div class="sent-message">Votre message a été bien envoyé</div>
-        </div>
-        <div class="text-center"><button type="submit">Envoyer Message</button></div>
-      </form> -->
-
     </div>
+  </footer>
+  <!-- footer ends here -->
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="main.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
+  <script>
+    function openURL() {
+      var url = "src/pdf/Boris_Junior_Resume.pdf";
+
+      window.open(url, "_blank");
+    }
+  </script>
+
+  <script>
+    const cursorInner = document.getElementById("cursor-inner");
+    const cursorOuter = document.getElementById("cursor-outer");
+    const links = document.querySelectorAll("a,label,button");
+
+    document.addEventListener("mousemove", function (e) {
+      const posX = e.clientX;
+      const posY = e.clientY;
+
+      cursorInner.style.left = `${posX}px`;
+      cursorInner.style.top = `${posY}px`;
+
+      // cursorOuter.style.left = `${posX}px`;
+      // cursorOuter.style.top = `${posY}px`;
+
+      cursorOuter.animate(
+        {
+          left: `${posX}px`,
+          top: `${posY}px`,
+        },
+        { duration: 500, fill: "forwards" }
+      );
+
+      links.forEach((link) => {
+        link.addEventListener("mouseenter", () => {
+          cursorInner.classList.add("hover");
+          cursorOuter.classList.add("hover");
+        });
+        link.addEventListener("mouseleave", () => {
+          cursorInner.classList.remove("hover");
+          cursorOuter.classList.remove("hover");
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>
