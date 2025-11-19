@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Portfolio de Boris Junior Koulevo - Data Scientist & Expert IA" />
     <title>Boris Junior Koulevo | Data Scientist & AI Specialist</title>
+    <link rel="icon" type="image/png" href="src/png/avatar.png" />
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -558,7 +559,7 @@
 
     <!-- Hero Section -->
     <section id="home" class="min-h-screen flex items-center justify-center relative pt-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse lg:flex-row items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20">
             
             <!-- Text Content -->
             <div class="lg:w-1/2 text-center lg:text-left mt-12 lg:mt-0 z-10">
@@ -879,168 +880,229 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-20 reveal" data-aos="fade-up">
-                <h2 class="text-3xl lg:text-4xl font-display font-bold mb-4">Projets <span class="text-gradient">Personnels</span></h2>
-                <p class="opacity-60">Innovations et expérimentations techniques</p>
-            </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-
-                <!-- Project 1: Empathetic AI -->
-                <div class="project-card glass-card rounded-3xl overflow-hidden border border-white/20 flex flex-col h-full" data-aos="fade-up">
-                    <div class="h-64 bg-gradient-to-br from-purple-900 to-indigo-900 relative flex items-center justify-center overflow-hidden group">
-                        <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all duration-500"></div>
-                        <i class="fas fa-heart text-8xl text-white/90 group-hover:scale-110 transition-transform duration-500 relative z-10"></i>
-                        <div class="absolute bottom-4 right-4 flex gap-2">
-                            <span class="text-xs font-bold bg-white/20 backdrop-blur-md text-white px-3 py-1 rounded-full">QLoRA</span>
-                            <span class="text-xs font-bold bg-white/20 backdrop-blur-md text-white px-3 py-1 rounded-full">Mistral-7B</span>
-                        </div>
-                    </div>
-                    <div class="p-10 flex flex-col flex-grow">
-                        <h3 class="text-3xl font-bold mb-2 group-hover:text-secondary transition-colors">EmpatheticAI</h3>
-                        <p class="text-sm font-bold text-secondary uppercase tracking-wide mb-6">GenAI & Affective Computing</p>
-                        
-                        <div class="text-base opacity-80 leading-relaxed mb-8 flex-grow">
-                            Conception d'une IA émotionnellement intelligente capable de générer des réponses empathiques en adaptant son ton et son message.
-                            <br><br>
-                            <ul class="list-disc pl-5 space-y-2">
-                                <li>Collecte et préparation d'un corpus de <strong>500 000+ dialogues</strong> empathiques.</li>
-                                <li>Implémentation from scratch d'une architecture <strong>CVAE</strong> (Conditional Variational Auto-Encoder) en PyTorch.</li>
-                                <li>Fine-tuning de <strong>Mistral-7B</strong> via QLoRA, atteignant des performances supérieures avec réponses plus naturelles.</li>
-                                <li>Développement d'une API Flask avec gestion de sessions conversationnelles multi-tours.</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="mt-auto pt-6 border-t border-gray-200 dark:border-white/10 flex justify-between items-center">
-                            <div class="flex -space-x-2">
-                                <div class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-sm text-white border-2 border-white dark:border-dark" title="Python">Py</div>
-                                <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-sm text-white border-2 border-white dark:border-dark" title="Torch">To</div>
-                            </div>
-                            <a href="https://github.com/BorisJunior" target="_blank" class="px-6 py-3 rounded-xl bg-secondary/10 text-secondary hover:bg-secondary hover:text-white transition-all font-bold text-sm">
-                                Voir Code <i class="fas fa-arrow-right ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2: GCP Pipeline -->
-                <div class="project-card glass-card rounded-3xl overflow-hidden border border-white/20 flex flex-col h-full" data-aos="fade-up" data-aos-delay="100">
-                    <div class="h-64 bg-gradient-to-br from-blue-900 to-cyan-900 relative flex items-center justify-center overflow-hidden group">
-                        <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all duration-500"></div>
-                        <i class="fas fa-network-wired text-8xl text-white/90 group-hover:scale-110 transition-transform duration-500 relative z-10"></i>
-                        <div class="absolute bottom-4 right-4 flex gap-2">
-                            <span class="text-xs font-bold bg-white/20 backdrop-blur-md text-white px-3 py-1 rounded-full">Airflow</span>
-                            <span class="text-xs font-bold bg-white/20 backdrop-blur-md text-white px-3 py-1 rounded-full">BigQuery</span>
-                        </div>
-                    </div>
-                    <div class="p-10 flex flex-col flex-grow">
-                        <h3 class="text-3xl font-bold mb-2 group-hover:text-primary transition-colors">GCP Data Pipeline</h3>
-                        <p class="text-sm font-bold text-primary uppercase tracking-wide mb-6">End-to-End Data Engineering</p>
-                        
-                        <div class="text-base opacity-80 leading-relaxed mb-8 flex-grow">
-                            Pipeline industriel complet sur Google Cloud Platform transformant les interactions clients en insights.
-                            <br><br>
-                            <ul class="list-disc pl-5 space-y-2">
-                                <li><strong>Ingestion:</strong> Cloud Storage & Cloud Functions event-driven.</li>
-                                <li><strong>Orchestration:</strong> Cloud Composer (Airflow managé) pour les traitements batch.</li>
-                                <li><strong>Transformation:</strong> Architecture médaillon (Raw/Staging/Marts) via dbt et BigQuery.</li>
-                                <li><strong>IA:</strong> Classification automatique des intents et sentiments via Gemini (Vertex AI).</li>
-                                <li><strong>Infra as Code:</strong> Provisionnement automatisé via scripts Python.</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="mt-auto pt-6 border-t border-gray-200 dark:border-white/10 flex justify-between items-center">
-                            <div class="flex -space-x-2">
-                                <div class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-sm text-white border-2 border-white dark:border-dark">GC</div>
-                                <div class="w-10 h-10 rounded-full bg-teal-500 flex items-center justify-center text-sm text-white border-2 border-white dark:border-dark">Ai</div>
-                            </div>
-                            <a href="#" class="px-6 py-3 rounded-xl bg-primary/10 text-primary hover:bg-primary hover:text-white transition-all font-bold text-sm">
-                                Voir Code <i class="fas fa-arrow-right ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3: AInterview -->
-                <div class="project-card glass-card rounded-3xl overflow-hidden border border-white/20 flex flex-col h-full" data-aos="fade-up" data-aos-delay="200">
-                    <div class="h-64 bg-gradient-to-br from-emerald-900 to-teal-900 relative flex items-center justify-center overflow-hidden group">
-                        <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all duration-500"></div>
-                        <i class="fas fa-user-tie text-8xl text-white/90 group-hover:scale-110 transition-transform duration-500 relative z-10"></i>
-                        <div class="absolute bottom-4 right-4 flex gap-2">
-                            <span class="text-xs font-bold bg-white/20 backdrop-blur-md text-white px-3 py-1 rounded-full">Flask</span>
-                            <span class="text-xs font-bold bg-white/20 backdrop-blur-md text-white px-3 py-1 rounded-full">React</span>
-                        </div>
-                    </div>
-                    <div class="p-10 flex flex-col flex-grow">
-                        <h3 class="text-3xl font-bold mb-2 group-hover:text-emerald-400 transition-colors">AInterview</h3>
-                        <p class="text-sm font-bold text-emerald-500 uppercase tracking-wide mb-6">Fullstack AI App</p>
-                        
-                        <div class="text-base opacity-80 leading-relaxed mb-8 flex-grow">
-                            Simulateur d'entretien d'embauche technique basé sur l'IA pour la préparation des candidats.
-                            <br><br>
-                            <ul class="list-disc pl-5 space-y-2">
-                                <li>Génération de questions contextuelles basées sur le profil du candidat.</li>
-                                <li>Feedback instantané et personnalisé sur la qualité des réponses.</li>
-                                <li>Interface React interactive et Backend Flask robuste.</li>
-                                <li>Gestion de sessions multi-tours.</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="mt-auto pt-6 border-t border-gray-200 dark:border-white/10 flex justify-between items-center">
-                            <div class="flex -space-x-2">
-                                <div class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-sm text-white border-2 border-white dark:border-dark">Py</div>
-                                <div class="w-10 h-10 rounded-full bg-cyan-500 flex items-center justify-center text-sm text-white border-2 border-white dark:border-dark">Re</div>
-                            </div>
-                            <a href="https://github.com/BorisJunior/AInterview" target="_blank" class="px-6 py-3 rounded-xl bg-emerald-500/10 text-emerald-500 hover:bg-emerald-500 hover:text-white transition-all font-bold text-sm">
-                                Voir Code <i class="fas fa-arrow-right ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 4: Mistral RAG -->
-                <div class="project-card glass-card rounded-3xl overflow-hidden border border-white/20 flex flex-col h-full" data-aos="fade-up" data-aos-delay="300">
-                    <div class="h-64 bg-gradient-to-br from-orange-900 to-red-900 relative flex items-center justify-center overflow-hidden group">
-                        <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all duration-500"></div>
-                        <i class="fas fa-search text-8xl text-white/90 group-hover:scale-110 transition-transform duration-500 relative z-10"></i>
-                        <div class="absolute bottom-4 right-4 flex gap-2">
-                            <span class="text-xs font-bold bg-white/20 backdrop-blur-md text-white px-3 py-1 rounded-full">LangChain</span>
-                            <span class="text-xs font-bold bg-white/20 backdrop-blur-md text-white px-3 py-1 rounded-full">FAISS</span>
-                        </div>
-                    </div>
-                    <div class="p-10 flex flex-col flex-grow">
-                        <h3 class="text-3xl font-bold mb-2 group-hover:text-orange-400 transition-colors">Mistral-RAG</h3>
-                        <p class="text-sm font-bold text-orange-500 uppercase tracking-wide mb-6">Advanced NLP</p>
-                        
-                        <div class="text-base opacity-80 leading-relaxed mb-8 flex-grow">
-                            Architecture RAG (Retrieval Augmented Generation) locale permettant d'interroger des documents privés.
-                            <br><br>
-                            <ul class="list-disc pl-5 space-y-2">
-                                <li>Segmentation sémantique de documents PDFs/Textes.</li>
-                                <li>Indexation vectorielle optimisée avec FAISS.</li>
-                                <li>Inférence via Mistral pour des réponses sourcées précises.</li>
-                                <li>Transformation de PDFs en quiz interactifs via agents IA.</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="mt-auto pt-6 border-t border-gray-200 dark:border-white/10 flex justify-between items-center">
-                            <div class="flex -space-x-2">
-                                <div class="w-10 h-10 rounded-full bg-orange-500 flex items-center justify-center text-sm text-white border-2 border-white dark:border-dark">LC</div>
-                                <div class="w-10 h-10 rounded-full bg-yellow-500 flex items-center justify-center text-sm text-white border-2 border-white dark:border-dark">Py</div>
-                            </div>
-                            <a href="#" class="px-6 py-3 rounded-xl bg-orange-500/10 text-orange-500 hover:bg-orange-500 hover:text-white transition-all font-bold text-sm">
-                                Voir Code <i class="fas fa-arrow-right ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+<!-- Projects Section -->
+<section id="projects" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-20 reveal" data-aos="fade-up">
+            <h2 class="text-3xl lg:text-4xl font-display font-bold mb-4">Projets <span class="text-gradient">Personnels</span></h2>
+            <p class="opacity-60">Innovations et expérimentations techniques</p>
         </div>
-    </section>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+            <!-- Project 1: Empathetic AI -->
+            <div class="project-card glass-card rounded-3xl overflow-hidden border border-white/20 flex flex-col h-full" data-aos="fade-up">
+                <div class="h-64 bg-gradient-to-br from-purple-900 to-indigo-900 relative flex items-center justify-center overflow-hidden group">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all duration-500"></div>
+                    <i class="fas fa-heart text-8xl text-white/90 group-hover:scale-110 transition-transform duration-500 relative z-10"></i>
+                    <div class="absolute bottom-4 right-4 flex gap-2">
+                        <span class="text-xs font-bold bg-white/20 backdrop-blur-md text-white px-3 py-1 rounded-full">QLoRA</span>
+                        <span class="text-xs font-bold bg-white/20 backdrop-blur-md text-white px-3 py-1 rounded-full">Mistral-7B</span>
+                    </div>
+                </div>
+                <div class="p-10 flex flex-col flex-grow">
+                    <h3 class="text-3xl font-bold mb-2 group-hover:text-secondary transition-colors">EmpatheticAI</h3>
+                    <p class="text-sm font-bold text-secondary uppercase tracking-wide mb-6">GenAI & Affective Computing</p>
+                    
+                    <div class="text-base opacity-80 leading-relaxed mb-8 flex-grow">
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li>Collecte et préparation d'un corpus de <strong>500 000+ dialogues</strong> empathiques.</li>
+                            <li>Implémentation from scratch d'une architecture <strong>CVAE</strong> (Conditional Variational Auto-Encoder) en PyTorch.</li>
+                            <li>Fine-tuning de <strong>Mistral-7B</strong> via QLoRA, atteignant des performances supérieures avec réponses plus naturelles.</li>
+                            <li>Développement d'une API Flask avec gestion de sessions conversationnelles multi-tours.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mt-auto pt-6 border-t border-gray-200 dark:border-white/10 flex justify-between items-center">
+                        <div class="flex -space-x-2">
+                            <div class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-sm text-white border-2 border-white dark:border-dark" title="Python">Py</div>
+                            <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-sm text-white border-2 border-white dark:border-dark" title="Torch">To</div>
+                        </div>
+                        <a href="https://github.com/BorisJunior" target="_blank" class="px-6 py-3 rounded-xl bg-secondary/10 text-secondary hover:bg-secondary hover:text-white transition-all font-bold text-sm">
+                            Voir Code <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: GCP Pipeline -->
+            <div class="project-card glass-card rounded-3xl overflow-hidden border border-white/20 flex flex-col h-full" data-aos="fade-up" data-aos-delay="100">
+                <div class="h-64 bg-gradient-to-br from-blue-900 to-cyan-900 relative flex items-center justify-center overflow-hidden group">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all duration-500"></div>
+                    <i class="fas fa-network-wired text-8xl text-white/90 group-hover:scale-110 transition-transform duration-500 relative z-10"></i>
+                    <div class="absolute bottom-4 right-4 flex gap-2">
+                        <span class="text-xs font-bold bg-white/20 backdrop-blur-md text-white px-3 py-1 rounded-full">Airflow</span>
+                        <span class="text-xs font-bold bg-white/20 backdrop-blur-md text-white px-3 py-1 rounded-full">BigQuery</span>
+                    </div>
+                </div>
+                <div class="p-10 flex flex-col flex-grow">
+                    <h3 class="text-3xl font-bold mb-2 group-hover:text-primary transition-colors">GCP Data Pipeline</h3>
+                    <p class="text-sm font-bold text-primary uppercase tracking-wide mb-6">End-to-End Data Engineering</p>
+                    
+                    <div class="text-base opacity-80 leading-relaxed mb-8 flex-grow">
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li><strong>Ingestion:</strong> Cloud Storage & Cloud Functions event-driven.</li>
+                            <li><strong>Orchestration:</strong> Cloud Composer (Airflow managé) pour les traitements batch.</li>
+                            <li><strong>Transformation:</strong> Architecture médaillon (Raw/Staging/Marts) via dbt et BigQuery.</li>
+                            <li><strong>IA:</strong> Classification automatique des intents et sentiments via Gemini (Vertex AI).</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mt-auto pt-6 border-t border-gray-200 dark:border-white/10 flex justify-between items-center">
+                        <div class="flex -space-x-2">
+                            <div class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-sm text-white border-2 border-white dark:border-dark">GC</div>
+                            <div class="w-10 h-10 rounded-full bg-teal-500 flex items-center justify-center text-sm text-white border-2 border-white dark:border-dark">Ai</div>
+                        </div>
+                        <a href="#" class="px-6 py-3 rounded-xl bg-primary/10 text-primary hover:bg-primary hover:text-white transition-all font-bold text-sm">
+                            Voir Code <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: AInterview (UPDATED) -->
+            <div class="project-card glass-card rounded-3xl overflow-hidden border border-white/20 flex flex-col h-full" data-aos="fade-up" data-aos-delay="200">
+                <div class="h-64 bg-gradient-to-br from-emerald-900 to-teal-900 relative flex items-center justify-center overflow-hidden group">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all duration-500"></div>
+                    <i class="fas fa-microphone text-8xl text-white/90 group-hover:scale-110 transition-transform duration-500 relative z-10"></i>
+                    <div class="absolute bottom-4 right-4 flex gap-2">
+                        <span class="text-xs font-bold bg-white/20 backdrop-blur-md text-white px-3 py-1 rounded-full">Flask</span>
+                        <span class="text-xs font-bold bg-white/20 backdrop-blur-md text-white px-3 py-1 rounded-full">GPT</span>
+                    </div>
+                </div>
+                <div class="p-10 flex flex-col flex-grow">
+                    <h3 class="text-3xl font-bold mb-2 group-hover:text-emerald-400 transition-colors">AInterview</h3>
+                    <p class="text-sm font-bold text-emerald-500 uppercase tracking-wide mb-6">Voice AI Interview Simulator</p>
+                    
+                    <div class="text-base opacity-80 leading-relaxed mb-8 flex-grow">
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li>Simulateur intelligent d'entretien permettant aux candidats de s'entraîner <strong>24/7</strong> avec feedback immédiat, résolvant les contraintes de disponibilité formateur.</li>
+                            <li>Pipeline vocal bidirectionnel : <strong>Google Speech-to-Text → GPT → Eleven Labs</strong> pour une expérience conversationnelle naturelle.</li>
+                            <li><strong>Prompt engineering avancé</strong> avec Chain of Thought maintenant un contexte cohérent et questions progressivement difficiles.</li>
+                            <li>Orchestration de <strong>3 APIs externes</strong> dans une application temps-réel avec interface Flask interactive.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mt-auto pt-6 border-t border-gray-200 dark:border-white/10 flex justify-between items-center">
+                        <div class="flex -space-x-2">
+                            <div class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-sm text-white border-2 border-white dark:border-dark">Py</div>
+                            <div class="w-10 h-10 rounded-full bg-green-500 flex items-center justify-center text-sm text-white border-2 border-white dark:border-dark">FL</div>
+                        </div>
+                        <a href="https://github.com/BorisJunior/AInterview" target="_blank" class="px-6 py-3 rounded-xl bg-emerald-500/10 text-emerald-500 hover:bg-emerald-500 hover:text-white transition-all font-bold text-sm">
+                            Voir Code <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4: Mistral RAG -->
+            <div class="project-card glass-card rounded-3xl overflow-hidden border border-white/20 flex flex-col h-full" data-aos="fade-up" data-aos-delay="300">
+                <div class="h-64 bg-gradient-to-br from-orange-900 to-red-900 relative flex items-center justify-center overflow-hidden group">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all duration-500"></div>
+                    <i class="fas fa-search text-8xl text-white/90 group-hover:scale-110 transition-transform duration-500 relative z-10"></i>
+                    <div class="absolute bottom-4 right-4 flex gap-2">
+                        <span class="text-xs font-bold bg-white/20 backdrop-blur-md text-white px-3 py-1 rounded-full">LangChain</span>
+                        <span class="text-xs font-bold bg-white/20 backdrop-blur-md text-white px-3 py-1 rounded-full">FAISS</span>
+                    </div>
+                </div>
+                <div class="p-10 flex flex-col flex-grow">
+                    <h3 class="text-3xl font-bold mb-2 group-hover:text-orange-400 transition-colors">Mistral-RAG</h3>
+                    <p class="text-sm font-bold text-orange-500 uppercase tracking-wide mb-6">Advanced NLP</p>
+                    
+                    <div class="text-base opacity-80 leading-relaxed mb-8 flex-grow">
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li>Architecture RAG (Retrieval Augmented Generation) locale permettant d'interroger des documents privés.</li>
+                            <li>Segmentation sémantique de documents PDFs/Textes avec indexation vectorielle optimisée via <strong>FAISS</strong>.</li>
+                            <li>Inférence via <strong>Mistral</strong> pour des réponses sourcées précises.</li>
+                            <li>Transformation de PDFs en quiz interactifs via agents IA.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mt-auto pt-6 border-t border-gray-200 dark:border-white/10 flex justify-between items-center">
+                        <div class="flex -space-x-2">
+                            <div class="w-10 h-10 rounded-full bg-orange-500 flex items-center justify-center text-sm text-white border-2 border-white dark:border-dark">LC</div>
+                            <div class="w-10 h-10 rounded-full bg-yellow-500 flex items-center justify-center text-sm text-white border-2 border-white dark:border-dark">Py</div>
+                        </div>
+                        <a href="#" class="px-6 py-3 rounded-xl bg-orange-500/10 text-orange-500 hover:bg-orange-500 hover:text-white transition-all font-bold text-sm">
+                            Voir Code <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5: Zindi Competition (NEW) -->
+            <div class="project-card glass-card rounded-3xl overflow-hidden border border-white/20 flex flex-col h-full" data-aos="fade-up" data-aos-delay="400">
+                <div class="h-64 bg-gradient-to-br from-pink-900 to-rose-900 relative flex items-center justify-center overflow-hidden group">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all duration-500"></div>
+                    <i class="fas fa-trophy text-8xl text-white/90 group-hover:scale-110 transition-transform duration-500 relative z-10"></i>
+                    <div class="absolute bottom-4 right-4 flex gap-2">
+                        <span class="text-xs font-bold bg-white/20 backdrop-blur-md text-white px-3 py-1 rounded-full">XGBoost</span>
+                        <span class="text-xs font-bold bg-white/20 backdrop-blur-md text-white px-3 py-1 rounded-full">Scikit-learn</span>
+                    </div>
+                </div>
+                <div class="p-10 flex flex-col flex-grow">
+                    <h3 class="text-3xl font-bold mb-2 group-hover:text-pink-400 transition-colors">Zindi ML Competition</h3>
+                    <p class="text-sm font-bold text-pink-500 uppercase tracking-wide mb-6">Prédiction Adoption Fibre Optique</p>
+                    
+                    <div class="text-base opacity-80 leading-relaxed mb-8 flex-grow">
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li>Analyse exploratoire d'un dataset de <strong>100 000 ménages</strong> avec identification des patterns géographiques (urbain vs rural) et visualisations pour insights.</li>
+                            <li><strong>Feature engineering stratégique</strong> avec création de features dérivées (densité population par zone) et optimisation du nombre de variables.</li>
+                            <li>Développement itératif : pivot de CNN (80%) vers <strong>Gradient Boosting (XGBoost/LightGBM)</strong> atteignant 87%, démontrant la supériorité sur données tabulaires.</li>
+                            <li>Optimisation via <strong>Grid Search et Cross-Validation</strong> atteignant <strong>89% de précision</strong> finale.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mt-auto pt-6 border-t border-gray-200 dark:border-white/10 flex justify-between items-center">
+                        <div class="flex -space-x-2">
+                            <div class="w-10 h-10 rounded-full bg-pink-600 flex items-center justify-center text-sm text-white border-2 border-white dark:border-dark">XG</div>
+                            <div class="w-10 h-10 rounded-full bg-orange-500 flex items-center justify-center text-sm text-white border-2 border-white dark:border-dark">Sk</div>
+                        </div>
+                        <a href="#" class="px-6 py-3 rounded-xl bg-pink-500/10 text-pink-500 hover:bg-pink-500 hover:text-white transition-all font-bold text-sm">
+                            Voir Projet <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 6: Sign Language Translator (NEW) -->
+            <div class="project-card glass-card rounded-3xl overflow-hidden border border-white/20 flex flex-col h-full" data-aos="fade-up" data-aos-delay="500">
+                <div class="h-64 bg-gradient-to-br from-indigo-900 to-violet-900 relative flex items-center justify-center overflow-hidden group">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all duration-500"></div>
+                    <i class="fas fa-hands text-8xl text-white/90 group-hover:scale-110 transition-transform duration-500 relative z-10"></i>
+                    <div class="absolute bottom-4 right-4 flex gap-2">
+                        <span class="text-xs font-bold bg-white/20 backdrop-blur-md text-white px-3 py-1 rounded-full">LSTM</span>
+                        <span class="text-xs font-bold bg-white/20 backdrop-blur-md text-white px-3 py-1 rounded-full">MediaPipe</span>
+                    </div>
+                </div>
+                <div class="p-10 flex flex-col flex-grow">
+                    <h3 class="text-3xl font-bold mb-2 group-hover:text-violet-400 transition-colors">Traducteur Langue des Signes</h3>
+                    <p class="text-sm font-bold text-violet-500 uppercase tracking-wide mb-6">Computer Vision & NLP</p>
+                    
+                    <div class="text-base opacity-80 leading-relaxed mb-8 flex-grow">
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li><strong>Leadership d'une équipe de 5 personnes</strong> avec workflow collaboratif structuré sur GitLab et coordination des tâches techniques.</li>
+                            <li>Constitution <strong>from scratch</strong> d'un dataset de <strong>1000+ images</strong> avec script d'annotation automatique, compensant la rareté des datasets français.</li>
+                            <li>Utilisation de <strong>MediaPipe</strong> pour détecter 21 landmarks par main en temps réel avec normalisation pour invariance position/distance.</li>
+                            <li>Pivot complet vers <strong>LSTM</strong> intégrant les séquences temporelles (<strong>65% précision</strong>), démontrant l'importance du choix d'architecture adapté au problème.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mt-auto pt-6 border-t border-gray-200 dark:border-white/10 flex justify-between items-center">
+                        <div class="flex -space-x-2">
+                            <div class="w-10 h-10 rounded-full bg-violet-600 flex items-center justify-center text-sm text-white border-2 border-white dark:border-dark">LS</div>
+                            <div class="w-10 h-10 rounded-full bg-indigo-500 flex items-center justify-center text-sm text-white border-2 border-white dark:border-dark">MP</div>
+                        </div>
+                        <a href="#" class="px-6 py-3 rounded-xl bg-violet-500/10 text-violet-500 hover:bg-violet-500 hover:text-white transition-all font-bold text-sm">
+                            Voir Projet <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 
     <!-- Contact & Footer Section Combined -->
     <footer id="contact" class="relative py-20 border-t border-gray-200 dark:border-white/5">
