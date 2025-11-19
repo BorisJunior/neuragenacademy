@@ -206,20 +206,12 @@
             animation: popup 3s linear forwards;
         }
 
-        /* Logo hover effect - SEUL l'avatar descend */
+        /* Logo - pas d'effet hover */
         .logo {
             position: relative;
             display: flex;
             align-items: center;
             gap: 0.5rem;
-        }
-
-        .logo img {
-            transition: transform 1s ease;
-        }
-
-        .logo:hover img {
-            transform: translateY(15px);
         }
 
         /* Jello effect on letters */
@@ -495,62 +487,6 @@
             z-index: 2;
         }
 
-        .footer-avatar-face {
-            position: absolute;
-            width: 100%;
-            height: 97%;
-            z-index: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 18px;
-            padding-left: 5px;
-        }
-
-        .footer-avatar-eye {
-            width: 50px;
-            height: 50px;
-            background-color: #dfd2d2;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .footer-pupil {
-            width: 20px;
-            height: 20px;
-            background-color: #000;
-            border-radius: 50%;
-            border: 5px solid #413333;
-            filter: blur(0.6px);
-            position: absolute;
-            transition: transform 0.1s ease-out;
-        }
-
-        .footer-right-eye {
-            box-shadow: 15px 15px 5px rgba(0,0,0,0.233) inset, 10px 10px 5px rgba(41,33,33,0.644) inset;
-        }
-
-        .footer-left-eye {
-            box-shadow: -10px -15px 5px rgba(0,0,0,0.349) inset;
-        }
-
-        .footer-avatar-eye::before {
-            position: absolute;
-            content: "";
-            width: 2px;
-            height: 5px;
-            border-radius: 50%;
-            background-color: rgba(214, 214, 214, 0.726);
-            z-index: 2;
-            filter: blur(0.2px);
-            left: 15px;
-            transform: rotate(45deg);
-        }
-
         /* Counter Animation */
         .counter {
             font-variant-numeric: tabular-nums;
@@ -660,7 +596,7 @@
             <div class="lg:w-1/2 flex justify-center relative reveal" data-aos="fade-up" data-aos-delay="200">
                 <div class="relative w-72 h-72 lg:w-96 lg:h-96">
                     <div class="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-full opacity-20 blur-2xl animate-pulse"></div>
-                    <img src="src/png/profile-pic.png" alt="Boris Junior Koulevo" class="relative w-full h-full object-cover rounded-full border-4 border-white/50 dark:border-white/10 shadow-2xl glass-card p-1" onerror="this.src='https://via.placeholder.com/400x400/0f172a/3b82f6?text=BK'"/>
+                    <img src="src/png/me.png" alt="Boris Junior Koulevo" class="relative w-full h-full object-cover rounded-full border-4 border-white/50 dark:border-white/10 shadow-2xl glass-card p-1" onerror="this.src='https://via.placeholder.com/400x400/0f172a/3b82f6?text=BK'"/>
                     
                     <!-- Floating Cards -->
                     <div class="absolute -right-4 top-10 glass-card p-4 rounded-xl flex items-center gap-3 animate-float shadow-lg border border-white/20 bg-white/80 dark:bg-darker/80" style="animation-duration: 6s;">
@@ -1132,17 +1068,9 @@
                 </a>
             </div>
 
-            <!-- Footer Avatar with Eye Tracking -->
+            <!-- Footer Avatar -->
             <div class="footer-avatar-container mx-auto" data-aos="fade-up" data-aos-delay="300">
                 <img src="src/png/avatar.png" alt="avatar" class="footer-avatar-img"/>
-                <div class="footer-avatar-face">
-                    <div class="footer-avatar-eye footer-left-eye">
-                        <div class="footer-pupil" id="left-pupil"></div>
-                    </div>
-                    <div class="footer-avatar-eye footer-right-eye">
-                        <div class="footer-pupil" id="right-pupil"></div>
-                    </div>
-                </div>
             </div>
 
             <!-- Quote -->
@@ -1370,34 +1298,6 @@
         if (aboutSection) {
             aboutObserver.observe(aboutSection);
         }
-
-        // --- Footer Eye Tracking ---
-        let leftPupil = document.getElementById('left-pupil');
-        let rightPupil = document.getElementById('right-pupil');
-        
-        const pupilStartPoint = -10;
-        const pupilRangeX = 20;
-        const pupilRangeY = 15;
-        
-        document.addEventListener('mousemove', (e) => {
-            const mouseXStartPoint = 0;
-            const mouseXEndPoint = window.innerWidth;
-            const mouseYEndPoint = window.innerHeight;
-            
-            const currentXPosition = e.clientX - mouseXStartPoint;
-            const currentYPosition = e.clientY;
-            
-            const fracXValue = currentXPosition / (mouseXEndPoint - mouseXStartPoint);
-            const fracYValue = currentYPosition / mouseYEndPoint;
-            
-            const translateX = pupilStartPoint + (fracXValue * pupilRangeX);
-            const translateY = pupilStartPoint + (fracYValue * pupilRangeY);
-            
-            if (leftPupil && rightPupil) {
-                leftPupil.style.transform = `translate(${translateX}px, ${translateY}px)`;
-                rightPupil.style.transform = `translate(${translateX}px, ${translateY}px)`;
-            }
-        });
 
         // --- Resume Download ---
         function openURL() {
