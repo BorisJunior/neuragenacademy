@@ -246,7 +246,7 @@
         .resume-btn {
             display: flex;
             align-items: center;
-            justify-content: flex-start;
+            -content: flex-start;
             width: 45px;
             height: 45px;
             border: none;
@@ -264,7 +264,7 @@
             transition: all 0.3s;
             display: flex;
             align-items: center;
-            justify-content: center;
+            -content: center;
         }
 
         .sign svg {
@@ -456,7 +456,7 @@
             height: 40px;
             display: flex;
             align-items: center;
-            justify-content: center;
+            -content: center;
             border-radius: 50%;
             transition: background 0.3s;
         }
@@ -480,7 +480,7 @@
             position: relative;
             display: flex;
             align-items: flex-end;
-            justify-content: center;
+            -content: center;
         }
 
         .footer-avatar-img {
@@ -518,7 +518,7 @@
     <!-- Navigation -->
     <nav class="fixed w-full z-50 top-0 nav-blur transition-all duration-300" id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
+            <div class="flex items-center -between h-20">
                 <div class="flex-shrink-0 relative logo-container">
                     <div class="hey" id="hey-popup">Salut!</div>
                     <a href="#home" class="text-2xl font-display font-bold tracking-wide transition-colors duration-300 text-slate-900 dark:text-white logo flex items-center gap-2">
@@ -558,7 +558,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="min-h-screen flex items-center justify-center relative pt-20">
+    <section id="home" class="min-h-screen flex items-center -center relative pt-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20">
             
             <!-- Text Content -->
@@ -578,9 +578,9 @@
                 <p class="text-lg mb-8 max-w-lg mx-auto lg:mx-0 reveal leading-relaxed opacity-80" data-aos="fade-up" data-aos-delay="200">
                     Je conçois des systèmes intelligents qui transforment la donnée en impact réel. Expert en NLP, LLMs et MLOps.
                 </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start reveal" data-aos="fade-up" data-aos-delay="300">
-                    <a href="#projects" class="px-8 py-3 rounded-full bg-navy text-white font-bold hover:opacity-90 transition-colors shadow-xl shadow-navy/20 dark:bg-white dark:text-darker dark:shadow-white/5">
-                        Voir mes projets
+                <div class="flex flex-row gap-3 justify-center lg:justify-start reveal" data-aos="fade-up" data-aos-delay="300">
+                    <a href="#projects" class="px-4 sm:px-8 py-3 rounded-full bg-navy text-white font-bold hover:opacity-90 transition-colors shadow-xl shadow-navy/20 dark:bg-white dark:text-darker dark:shadow-white/5 text-sm sm:text-base whitespace-nowrap">
+                        Mes projets
                     </a>
                     <button class="resume-btn" onclick="openURL()">
                         <div class="sign">
@@ -591,16 +591,15 @@
                         <div class="text">CV</div>
                     </button>
                 </div>
-            </div>
 
-            <!-- Visual/Avatar -->
-            <div class="lg:w-1/2 flex justify-center relative reveal" data-aos="fade-up" data-aos-delay="200">
+                <!-- Visual/Avatar -->
+            <div class="lg:w-1/2 flex flex-col items-center relative reveal" data-aos="fade-up" data-aos-delay="200">
                 <div class="relative w-72 h-72 lg:w-96 lg:h-96">
                     <div class="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-full opacity-20 blur-2xl animate-pulse"></div>
                     <img src="src/png/me-pic.png" alt="Boris Junior Koulevo" class="relative w-full h-full object-cover rounded-full border-4 border-white/50 dark:border-white/10 shadow-2xl glass-card p-1" onerror="this.src='https://via.placeholder.com/400x400/0f172a/3b82f6?text=BK'"/>
                     
-                    <!-- Floating Cards -->
-                    <div class="absolute -right-4 top-10 glass-card p-4 rounded-xl flex items-center gap-3 animate-float shadow-lg border border-white/20 bg-white/80 dark:bg-darker/80" style="animation-duration: 6s;">
+                    <!-- Floating Cards - Desktop Only (plus décalées pour dégager le visage) -->
+                    <div class="hidden lg:flex absolute -right-12 top-8 glass-card p-4 rounded-xl items-center gap-3 animate-float shadow-lg border border-white/20 bg-white/80 dark:bg-darker/80" style="animation-duration: 6s;">
                         <div class="w-10 h-10 bg-blue-500/20 rounded-full flex items-center justify-center text-blue-500">
                             <i class="fas fa-robot"></i>
                         </div>
@@ -609,8 +608,31 @@
                             <p class="text-sm font-bold">Generative AI</p>
                         </div>
                     </div>
-
-                    <div class="absolute -left-8 bottom-20 glass-card p-4 rounded-xl flex items-center gap-3 animate-float shadow-lg border border-white/20 bg-white/80 dark:bg-darker/80" style="animation-duration: 8s;">
+            
+                    <div class="hidden lg:flex absolute -left-12 bottom-16 glass-card p-4 rounded-xl items-center gap-3 animate-float shadow-lg border border-white/20 bg-white/80 dark:bg-darker/80" style="animation-duration: 8s;">
+                        <div class="w-10 h-10 bg-purple-500/20 rounded-full flex items-center justify-center text-purple-500">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs opacity-60">Focus</p>
+                            <p class="text-sm font-bold">Data Engineering</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Cards Mobile Version - Sous la photo (visible uniquement sur mobile) -->
+                <div class="flex lg:hidden flex-col gap-3 mt-6 w-full max-w-xs">
+                    <div class="glass-card p-4 rounded-xl flex items-center gap-3 shadow-lg border border-white/20 bg-white/80 dark:bg-darker/80">
+                        <div class="w-10 h-10 bg-blue-500/20 rounded-full flex items-center justify-center text-blue-500">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs opacity-60">Spécialité</p>
+                            <p class="text-sm font-bold">Generative AI</p>
+                        </div>
+                    </div>
+            
+                    <div class="glass-card p-4 rounded-xl flex items-center gap-3 shadow-lg border border-white/20 bg-white/80 dark:bg-darker/80">
                         <div class="w-10 h-10 bg-purple-500/20 rounded-full flex items-center justify-center text-purple-500">
                             <i class="fas fa-database"></i>
                         </div>
